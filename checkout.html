@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — DAIA</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="mount-header"></div>
+
+  <main class="wrap">
+    <div class="page-head" style="padding-bottom:0">
+      <span class="eyebrow label">Checkout</span>
+      <h1>Details</h1>
+    </div>
+
+    <div class="checkout">
+      <!-- FORM -->
+      <form id="checkoutForm" novalidate>
+        <div class="fieldset-title">Contact</div>
+        <div class="field-row">
+          <div class="field"><label>First name</label><input name="firstName" required autocomplete="given-name"></div>
+          <div class="field"><label>Last name</label><input name="lastName" required autocomplete="family-name"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Email</label><input type="email" name="email" required autocomplete="email"></div>
+          <div class="field"><label>Phone</label><input type="tel" name="phone" required autocomplete="tel"></div>
+        </div>
+
+        <div class="fieldset-title">Shipping address</div>
+        <div class="field"><label>Address</label><input name="address" required autocomplete="street-address"></div>
+        <div class="field-row">
+          <div class="field"><label>Postal code</label><input name="zip" required autocomplete="postal-code"></div>
+          <div class="field"><label>City</label><input name="city" required autocomplete="address-level2"></div>
+        </div>
+        <div class="field"><label>Country</label>
+          <select name="country" required autocomplete="country-name">
+            <option value="Poland" selected>Poland</option>
+            <option>Germany</option><option>Czechia</option><option>Slovakia</option>
+            <option>United Kingdom</option><option>Other (EU)</option>
+          </select>
+        </div>
+
+        <div class="fieldset-title">Delivery</div>
+        <label class="radio-card"><span><strong>InPost Locker</strong><br><span class="mini">1–2 business days</span></span>
+          <span><input type="radio" name="shipping" value="locker" data-cost="12" checked> 12 PLN</span></label>
+        <label class="radio-card"><span><strong>Courier</strong><br><span class="mini">Next business day</span></span>
+          <span><input type="radio" name="shipping" value="courier" data-cost="18"> 18 PLN</span></label>
+        <label class="radio-card"><span><strong>Pickup point</strong><br><span class="mini">2–3 business days</span></span>
+          <span><input type="radio" name="shipping" value="pickup" data-cost="9"> 9 PLN</span></label>
+
+        <div class="fieldset-title">Payment</div>
+        <label class="radio-card"><span><strong>Card</strong><br><span class="mini">Visa · Mastercard</span></span>
+          <span><input type="radio" name="payment" value="card" checked></span></label>
+        <label class="radio-card"><span><strong>BLIK</strong><br><span class="mini">Instant</span></span>
+          <span><input type="radio" name="payment" value="blik"></span></label>
+        <label class="radio-card"><span><strong>Transfer</strong><br><span class="mini">Fast bank transfer</span></span>
+          <span><input type="radio" name="payment" value="transfer"></span></label>
+
+        <button class="btn btn--block" type="submit" style="margin-top:26px" id="payBtn">Pay — <span id="payTotal"></span></button>
+        <p class="mini" style="margin-top:14px;text-align:center">Demo checkout — no real payment is processed.</p>
+      </form>
+
+      <!-- SUMMARY -->
+      <aside class="summary">
+        <div class="label" style="margin-bottom:18px">Order summary</div>
+        <div id="summaryItems"></div>
+        <div class="summary__line"><span>Subtotal</span><span id="sumSubtotal"></span></div>
+        <div class="summary__line"><span>Shipping</span><span id="sumShipping"></span></div>
+        <div class="summary__line total"><span>Total</span><span id="sumTotal"></span></div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="mount-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/checkout.js"></script>
+</body>
+</html>

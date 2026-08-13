@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250" role="img">
+<rect width="1000" height="1250" fill="#EDEAE3"/>
+<g transform="translate(0,-8)"><path d="M 578 452 Q 500 512 422 452 L 300 466 L 158 486 L 158 700 L 312 694 L 292 1066 Q 500 1096 708 1066 L 688 694 L 842 700 L 842 486 L 700 466 Z" fill="#25313E"/></g>
+     <line x1="842" y1="486" x2="928" y2="486" stroke="#141414" stroke-width="1.5" opacity="0.5"/>
+     <line x1="842" y1="700" x2="928" y2="700" stroke="#141414" stroke-width="1.5" opacity="0.5"/>
+     <line x1="920" y1="486" x2="920" y2="700" stroke="#141414" stroke-width="1.5" opacity="0.5"/>
+     <text x="70" y="110" font-family="Helvetica Neue, Arial, sans-serif" fill="#141414" font-size="26" letter-spacing="4">THE TEE</text>
+     <rect x="900" y="88" width="30" height="30" fill="#26333F" stroke="rgba(0,0,0,.15)"/>
+</svg>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DAIA — Built around the fit</title>
+  <meta name="description" content="One refined t-shirt. Standard sizing, plus an individual sleeve fit — choose the exact width of the sleeve opening.">
+  <link rel="preconnect" href="">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="mount-header"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <span class="label hero__kicker">The Tee — Vol. 01</span>
+        <h1>Built around the fit.</h1>
+        <p class="hero__sub">One refined t-shirt. Keep your standard size — then choose the exact fit of the sleeve.</p>
+        <div class="hero__cta">
+          <a class="btn" href="shop.html">Shop the tee</a>
+          <a class="btn btn--ghost" href="#fit">See the cut</a>
+        </div>
+      </div>
+      <div class="hero__img">
+        <img src="assets/img/products/the-tee/black/hero.png" alt="Model wearing THE TEE in black">
+        <span class="hero__meta">Model 188 cm / 60 kg · wearing S/31</span>
+        <a class="link-underline hero__scroll" href="#fit">Scroll</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="strip">
+    <div class="strip__track">
+      <span>Standard size + individual sleeve fit</span><span>·</span>
+      <span>100% cotton · 185 GSM</span><span>·</span>
+      <span>Four sleeve openings</span><span>·</span>
+      <span>One tee, your fit</span><span>·</span>
+      <span>Standard size + individual sleeve fit</span><span>·</span>
+      <span>100% cotton · 185 GSM</span><span>·</span>
+      <span>Four sleeve openings</span><span>·</span>
+      <span>One tee, your fit</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- FIT INTRO -->
+  <section class="section" id="fit">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow label">The problem</span>
+        <p class="lead">A body that fits is easy. A sleeve that fits is not.</p>
+        <p>Most tees get the torso right and stop there — leaving sleeves too wide, out of proportion with the arm, loose exactly where they should sit clean.</p>
+        <p>So we kept the body constant and made the one thing that never gets a choice, a choice: the sleeve.</p>
+        <a class="link-underline" href="#sleeve" style="margin-top:28px;display:inline-block">Understand the system</a>
+      </div>
+      <div class="split__media reveal"><img src="assets/img/products/the-tee/black/sleeve.png" alt="Sleeve detail"></div>
+    </div>
+  </section>
+
+  <!-- SLEEVE SYSTEM -->
+  <section class="section sleeve-sys" id="sleeve">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow label">The system</span>
+          <h2>Same size. Four sleeve openings.</h2>
+        </div>
+        <p class="mini" style="max-width:30ch;color:rgba(243,241,236,.55)">Numbers are the circumference of the sleeve opening, measured flat × 2. The body never changes.</p>
+      </div>
+
+      <div class="sleeve-grid reveal" id="sleeveShowcase">
+        <!-- filled by landing.js -->
+      </div>
+
+      <div class="sleeve-compare reveal">
+        <div class="col">
+          <span class="mini">Standard tee</span>
+          <div class="sleeve-diagram">
+            <svg width="220" height="150" viewBox="0 0 220 150" stroke="rgba(243,241,236,.8)" fill="none" stroke-width="2">
+              <path d="M40 40 L70 20 L110 30 L150 20 L180 40 L165 60 L150 52 L150 130 L70 130 L70 52 L55 60 Z"/>
+            </svg>
+          </div>
+          <p class="mini" style="margin-top:16px;color:rgba(243,241,236,.55)">One wide sleeve for everyone.</p>
+        </div>
+        <div class="col">
+          <span class="mini">DAIA</span>
+          <div class="sleeve-diagram">
+            <svg width="220" height="150" viewBox="0 0 220 150" stroke="rgba(243,241,236,.9)" fill="none" stroke-width="2">
+              <path d="M60 42 L82 24 L110 32 L138 24 L160 42 L150 58 L138 51 L138 130 L82 130 L82 51 L70 58 Z"/>
+              <path d="M40 44 L62 26 M180 44 L158 26" stroke-dasharray="3 4" opacity=".55"/>
+            </svg>
+          </div>
+          <p class="mini" style="margin-top:16px;color:rgba(243,241,236,.55)">You pick the opening. Same body.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION PREVIEW -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow label">The collection</span>
+          <h2>Four colours. One cut.</h2>
+        </div>
+        <a class="link-underline" href="shop.html">Shop all</a>
+      </div>
+      <div class="collection" id="collectionPreview"><!-- filled by landing.js --></div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap" style="text-align:center;border-top:1px solid var(--line-soft);padding-top:clamp(60px,9vw,130px)">
+      <span class="eyebrow label">One tee. Your fit.</span>
+      <h2 style="font-size:var(--fs-display);font-weight:600;letter-spacing:-.01em;line-height:1;max-width:16ch;margin:18px auto 34px">Not another t-shirt. A better fitting one.</h2>
+      <a class="btn" href="shop.html">Shop the tee — 59 PLN</a>
+    </div>
+  </section>
+
+  <div id="mount-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/landing.js"></script>
+</body>
+</html>

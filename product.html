@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE TEE — DAIA</title>
+  <meta name="description" content="THE TEE. 100% cotton, 185 GSM. Standard size plus individual sleeve fit.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="mount-header"></div>
+
+  <main class="wrap">
+    <div class="pdp">
+      <!-- GALLERY -->
+      <div class="gallery">
+        <div class="gallery__main">
+          <img id="mainImg" src="" alt="THE TEE">
+        </div>
+        <div class="gallery__thumbs" id="thumbs"></div>
+      </div>
+
+      <!-- CONFIG -->
+      <div class="config">
+        <div class="config__crumbs mini"><a href="shop.html">Shop</a> — <span id="crumbColor">Black</span></div>
+        <h1>THE TEE</h1>
+        <div class="config__price" id="price">59 PLN</div>
+
+        <!-- COLOR -->
+        <div class="config__block">
+          <div class="config__row">
+            <span class="label">Colour</span>
+            <span class="val mini" id="colorLabel">BLACK</span>
+          </div>
+          <div class="swatches" id="swatches"></div>
+        </div>
+
+        <!-- SIZE -->
+        <div class="config__block">
+          <div class="config__row">
+            <span class="label">Size</span>
+            <button class="link-underline" data-measure style="font-size:var(--fs-mini)">Size guide</button>
+          </div>
+          <div class="chips" id="sizes"></div>
+          <p class="mini" id="sizeNote" style="margin-top:12px">Launch run — size S available now. More sizes soon.</p>
+        </div>
+
+        <!-- SLEEVE (revealed after size) -->
+        <div class="config__block hidden" id="sleeveBlock">
+          <div class="config__row">
+            <span class="label">Sleeve fit — opening</span>
+            <span class="val mini" id="sleeveCirc">—</span>
+          </div>
+          <div class="sleeve-opts" id="sleeveOpts"></div>
+          <div class="sleeve-help">
+            <span class="mini">Not sure which one?</span>
+            <button class="link-underline" data-measure style="font-size:var(--fs-mini)">How to measure</button>
+          </div>
+          <div class="model-meta" id="modelMeta"></div>
+        </div>
+
+        <!-- ADD TO CART -->
+        <div style="margin-top:26px">
+          <button class="btn btn--block" id="addBtn" disabled>Select size &amp; sleeve</button>
+        </div>
+
+        <!-- DETAILS -->
+        <div class="accordion" style="margin-top:34px" id="accordion"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Mobile sticky buy bar -->
+  <div class="buybar" id="buybar">
+    <div class="buybar__inner">
+      <div class="meta">
+        <div class="mini" id="buybarSpec">THE TEE · BLACK</div>
+        <div class="p" id="buybarPrice">59 PLN</div>
+      </div>
+      <button class="btn" id="buybarBtn" disabled>Select</button>
+    </div>
+  </div>
+
+  <div id="mount-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/product.js"></script>
+</body>
+</html>
